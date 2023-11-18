@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" href="script.js">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
+    <script type="module"></script>
+    <div id="modal" class="wrapper">
         <div class="form-wrapper sign-in">
             <form action="">
                 <h2>Login</h2>
                 <div class="input-group">
-                    <input type="text" requered>
-                    <label for="">Usurname</label>
+                    <input type="email" id="modal-email" placeholder="email" requered>
+                    <label for="modal-email">Email</label>   
                 </div>
                 <div class="input-group">
-                    <input type="text" requered>
-                    <label for="">Password</label>
+                    <input type="password" id="modal-password"  placeholder="****"requered>
+                    <label for="modal-password">Password</label>
+                    
                 </div>
                 <div class="remember">
                     <label for=""><input type="checkbox"> Remenberme</label>
                 </div>
                 <button type="submit">Login</button>
                 <div class="signUp-link">
-                    <p>Don't have an account? <a href="#"
-                    class="signUpBtn-link">Sing Up</a></p>
+                    
+                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Sing Up</a></p>
                 </div>
             </form>
         </div>
+
         <div class="form-wrapper sign-up">
             <form action="">
                 <h2>Sing Up</h2>
@@ -37,7 +40,7 @@
                     <label for="">Usurname</label>
                 </div>
                 <div class="input-group">
-                    <input type="email" requered>
+                    <input type="text" requered>
                     <label for="">Email</label>
                 </div>
                 <div class="input-group">
@@ -50,12 +53,11 @@
                 <button type="submit">Sign Up</button>
                 <div class="signUp-link">
                     <p>Already have an acocunt? <a href="#"
-                        class="signInBtn-link">Sing In</a></p>
-                </div>
+                        class="signInBtn-link">Sing In</a></p>            
+                </div> 
+                
             </form>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
