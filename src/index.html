@@ -7,57 +7,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script type="module"></script>
     <div id="modal" class="wrapper">
         <div class="form-wrapper sign-in">
             <form action="">
                 <h2>Login</h2>
                 <div class="input-group">
-                    <input type="email" id="modal-email" placeholder="email" requered>
+                    <input type="email" id="modal-email" placeholder="email" required> <!-- Corrected attribute name 'requered' to 'required' -->
                     <label for="modal-email">Email</label>   
                 </div>
                 <div class="input-group">
-                    <input type="password" id="modal-password"  placeholder="****"requered>
+                    <input type="password" id="modal-password"  placeholder="****" required> <!-- Corrected attribute name 'requered' to 'required' -->
                     <label for="modal-password">Password</label>
                     
                 </div>
                 <div class="remember">
-                    <label for=""><input type="checkbox"> Remenberme</label>
+                    <label><input type="checkbox"> Remember me</label>
                 </div>
                 <button type="submit">Login</button>
-                <div class="signUp-link">
-                    
-                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Sing Up</a></p>
+                <div class="signIn-link">
+                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p> <!-- Corrected 'Sing Up' to 'Sign Up' -->
                 </div>
             </form>
         </div>
 
         <div class="form-wrapper sign-up">
             <form action="">
-                <h2>Sing Up</h2>
+                <h2>Sign Up</h2> <!-- Corrected 'Sing Up' to 'Sign Up' -->
                 <div class="input-group">
-                    <input type="text" requered>
-                    <label for="">Usurname</label>
+                    <input type="text" required> <!-- Removed 'requered' and corrected attribute name to 'required' -->
+                    <label for="">Username</label> <!-- It's preferable to have a label text for accessibility -->
                 </div>
                 <div class="input-group">
-                    <input type="text" requered>
+                    <input type="text" required> <!-- Removed 'requered' and corrected attribute name to 'required' -->
                     <label for="">Email</label>
                 </div>
                 <div class="input-group">
-                    <input type="password" requered>
+                    <input type="password" required> <!-- Removed 'requered' and corrected attribute name to 'required' -->
                     <label for="">Password</label>
                 </div>
                 <div class="remember">
-                    <label><input type="checkbox"> I gree to the terms & conditions</label>
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
                 </div>
                 <button type="submit">Sign Up</button>
                 <div class="signUp-link">
-                    <p>Already have an acocunt? <a href="#"
-                        class="signInBtn-link">Sing In</a></p>            
+                    <p>Already have an account? <a href="#" class="signInBtn-link">Sign In</a></p> <!-- Corrected 'Sing In' to 'Sign In' -->
+                            
+                </div>
+                <div class="signr-link">
+                    <p>Lorem, ipsummet <a href="#" class="signRegist-link">¿Has olvidado tu contraseña?</a></p> 
                 </div> 
-                
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-Regist">
+            <form action="">
+                <h2>Recuperar Contraseña</h2>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit">Enviar enlace de restablecimiento</button>
+                <div class="signRegist-link">
+                    <p>¿Ya tienes una cuenta? <a href="#" class="signr-link">Iniciar sesión</a></p>            
+                </div> 
             </form>
         </div>
         <script src="script.js"></script>
+    </div> <!-- Moved the script tag inside the 'div' with class 'wrapper' -->
 </body>
 </html>
